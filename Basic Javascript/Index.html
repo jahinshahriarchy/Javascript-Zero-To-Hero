@@ -8,7 +8,46 @@
 </head>
 <body>
     <h1>This is javascript practice file</h1>
-    
-   <script src="array.js"></script> 
+    <script>
+
+//         let age = prompt('age?', '');
+
+// let message = (age < 3) ? 'Hi, baby!' :
+//   (age < 18) ? 'Hello!' :
+//   (age < 100) ? 'Greetings!' :
+//   'What an unusual age!';
+
+// alert( message );
+
+// let login = prompt('name?','');
+
+// let message = (login == 'Employee') ? 'Hello' :
+//   (login == 'Director') ? 'Greetings' :
+//   (login == '') ? 'No login' :
+//   '';
+// alert(message);
+
+let userName = prompt("Who's there?", '');
+
+if (userName == 'Admin') {
+
+  let pass = prompt('Password?', '');
+
+  if (pass == 'TheMaster') {
+    alert( 'Welcome!' );
+  } else if (pass == '' || pass == null) {
+    alert( 'Canceled' );
+  } else {
+    alert( 'Wrong password' );
+  }
+
+} else if (userName == '' || userName == null) {
+  alert( 'Canceled' );
+} else {
+  alert( "I don't know you" );
+}
+
+    </script>
+   <script src="if_condition.js"></script> 
 </body>
 </html>
